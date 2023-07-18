@@ -82,7 +82,7 @@ export const getUsersLikedMovies = createAsyncThunk(
     const {
       data: { movies },
     } = await axios.get(
-      `https://netflix-clone-gn5y.onrender.com/api/user/liked/${email}`
+      `https://spotlight-webapp.onrender.com/api/user/liked/${email}`
     );
     return movies;
   }
@@ -94,7 +94,7 @@ export const removeMovieFromLiked = createAsyncThunk(
     const {
       data: { movies },
     } = await axios.put(
-      "https://netflix-clone-gn5y.onrender.com/api/user/remove",
+      "https://spotlight-webapp.onrender.com/api/user/remove",
       {
         email,
         movieId,
